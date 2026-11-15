@@ -1,0 +1,58 @@
+# 这个仓库是公开的 —— 别把私人的东西推上来
+
+# ── 私人内容（整目录挡掉，只放行说明文件）──────────────────────
+# 人格卡、凭据备忘、本机绝对路径、QQ 号这种，一律放 private/。
+# README 例外：它解释这个目录的作用，本身不含隐私，应该跟着仓库走。
+/private/*
+!/private/README.md
+*.private.md
+*.private.json
+
+# ── 凭据与 token（任何时候都不能进仓库）────────────────────────
+*.token
+*.token.txt
+credentials.json
+.credentials.yaml
+.sessdata.json
+*sessdata*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# ── 本机运行产物 ────────────────────────────────────────────────
+state/
+config.json
+*.log
+*.log.*
+*.bak
+*.bak-*
+*.tmp
+*.tmp-*
+.tmp-*
+
+# ── 编辑器 / 系统 ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+
+# ── 依赖 ──────────────────────────────────────────────────────
+node_modules/
+.npm-cache/
+__pycache__/
+*.pyc
+
+# ── 大文件（视频、安装包、模型）──────────────────────────────────
+*.mp4
+*.mkv
+*.avi
+*.exe
+*.msi
+*.zip
+*.7z
+*.rar
+*.gguf
+*.onnx
+*.bin
